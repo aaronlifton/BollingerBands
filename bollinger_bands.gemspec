@@ -6,7 +6,8 @@ Gem::Specification.new do |s|
   s.description = "Bollinger Bands Stock Charting"
   s.authors     = ["Aaron Lifton"]
   s.email       = 'aaronlifton@gmail.com'
-  s.files       = ["lib/bollinger_bands.rb"]
+  s.files       = ["lib/bollinger_bands.rb",
+                   "lib/stock.rb"]
   s.homepage    = 'http://rubygems.org/gems/bollinger_bands'
   s.license     = 'MIT'
 end
