@@ -1,5 +1,4 @@
-require File.join(File.dirname(__FILE__), 'bollinger_band')
-
+require File.join(File.dirname(__FILE__), 'lib', 'bollinger_band')
 
 class Stock
   require 'yahoofinance'
