@@ -1,4 +1,4 @@
-class BollingerBands
+class BollingerBand
   # Bollinger band parameters
   DEFAULT_PARAMS = {
     num_periods: 20,
@@ -56,10 +56,10 @@ class BollingerBands
       bandwidth = (ux - lx) / x1
   
       # append to arrays
-      bollinger_bands << [ x1, lx, ux, bandwidth, percent_b ]
+      # bollinger_bands << [ x1, lx, ux, bandwidth, percent_b ]
       
       # append hash
-      # bollinger_bands << {sma: x1, lower: lx, upper: ux, bandwidth: bandwidth, percent_b: percent_b}
+      bollinger_bands << {sma: x1, lower: lx, upper: ux, bandwidth: bandwidth, percent_b: percent_b}
       i += 1     
     end      
     bollinger_bands   

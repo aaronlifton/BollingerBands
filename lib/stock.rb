@@ -1,4 +1,5 @@
-require_relative 'bollinger_bands'
+require File.join(File.dirname(__FILE__), 'bollinger_band')
+
 
 class Stock
   require 'yahoofinance'
@@ -44,7 +45,7 @@ class Stock
   end
 
   def bollinger_bands
-    b = BollingerBands.new
+    b = BollingerBand.new
     b.compute_bollinger(get_historical_closes.values.map(&:to_i))
   end
 end
